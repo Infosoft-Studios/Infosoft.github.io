@@ -1,59 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Infosoft Downloads</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Downloads — Infosoft</title>
+<meta name="description" content="Download EclipseOS, Dpp, CutPro and HypX-AI directly from the Infosoft GitHub organization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="navbar glass">
-    <div class="logo">INFOSOFT</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="downloads.html">Downloads</a>
-        <a href="https://github.com/Infosoft" target="_blank">GitHub</a>
+<div class="ambient" aria-hidden="true">
+  <div class="orb orb--1"></div>
+  <div class="orb orb--2"></div>
+  <div class="orb orb--3"></div>
+</div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      Infosoft
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="downloads.html" class="active">Downloads</a>
+      <a href="index.html#products">Products</a>
+      <a href="index.html#about">About</a>
+      <a href="https://github.com/Infosoft" target="_blank" rel="noopener" class="nav-github">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
     </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
 
-<section class="section">
-    <h2 class="section-title">Downloads</h2>
-    <p class="subtitle">All Infosoft products are hosted on GitHub.</p>
+<main>
 
-    <div class="grid">
-
-        <div class="card glass">
-            <h3>EclipseOS</h3>
-            <p>Install the Infosoft operating system.</p>
-            <a class="btn" href="https://github.com/Infosoft/EclipseOS" target="_blank">Go to GitHub</a>
-        </div>
-
-        <div class="card glass">
-            <h3>Dpp Compiler</h3>
-            <p>Download the official Dpp compiler and language tools.</p>
-            <a class="btn" href="https://github.com/Infosoft/Dpp" target="_blank">Go to GitHub</a>
-        </div>
-
-        <div class="card glass">
-            <h3>Cut Pro</h3>
-            <p>Download the real‑time Infosoft video editor.</p>
-            <a class="btn" href="https://github.com/Infosoft/CutPro" target="_blank">Go to GitHub</a>
-        </div>
-
-        <div class="card glass">
-            <h3>HypX AI</h3>
-            <p>Download the HypX AI engine.</p>
-            <a class="btn" href="https://github.com/Infosoft/HypX-AI" target="_blank">Go to GitHub</a>
-        </div>
-
+  <section class="page-header">
+    <div class="container">
+      <div class="eyebrow reveal is-visible" style="justify-content:center">Downloads</div>
+      <h1 class="section-heading reveal is-visible">Get the Infosoft toolkit</h1>
+      <p class="section-sub reveal is-visible">Every product is hosted directly on GitHub. Clone the repository, read the source, and build it yourself — no installers, no accounts.</p>
     </div>
-</section>
+  </section>
 
-<footer class="footer glass">
-    <p>© 2026 Infosoft Studios. All rights reserved.</p>
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="grid-downloads reveal-stagger">
+
+        <article class="card download-card reveal" style="--i:0">
+          <div class="download-top">
+            <div class="download-icon">E</div>
+            <span class="download-status">STABLE</span>
+          </div>
+          <h3>EclipseOS</h3>
+          <p>A lightweight operating system layer tuned for low-latency workloads and predictable performance under sustained load.</p>
+          <div class="download-meta">
+            <span>⌁ System</span>
+            <span>⌘ Infosoft/EclipseOS</span>
+          </div>
+          <div class="download-actions">
+            <a href="https://github.com/Infosoft/EclipseOS" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v10m0 0l-4-4m4 4l4-4M4 16h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download
+            </a>
+          </div>
+        </article>
+
+        <article class="card download-card reveal" style="--i:1">
+          <div class="download-top">
+            <div class="download-icon">D</div>
+            <span class="download-status">STABLE</span>
+          </div>
+          <h3>Dpp</h3>
+          <p>A fast, no-nonsense development pre-processor that streamlines your build pipeline from source straight to output.</p>
+          <div class="download-meta">
+            <span>⌁ Tooling</span>
+            <span>⌘ Infosoft/Dpp</span>
+          </div>
+          <div class="download-actions">
+            <a href="https://github.com/Infosoft/Dpp" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v10m0 0l-4-4m4 4l4-4M4 16h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download
+            </a>
+          </div>
+        </article>
+
+        <article class="card download-card reveal" style="--i:2">
+          <div class="download-top">
+            <div class="download-icon">C</div>
+            <span class="download-status">STABLE</span>
+          </div>
+          <h3>CutPro</h3>
+          <p>Precision editing software for creators who need frame-accurate control without the bloat of a heavier suite.</p>
+          <div class="download-meta">
+            <span>⌁ Creative</span>
+            <span>⌘ Infosoft/CutPro</span>
+          </div>
+          <div class="download-actions">
+            <a href="https://github.com/Infosoft/CutPro" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v10m0 0l-4-4m4 4l4-4M4 16h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download
+            </a>
+          </div>
+        </article>
+
+        <article class="card download-card reveal" style="--i:3">
+          <div class="download-top">
+            <div class="download-icon">H</div>
+            <span class="download-status">BETA</span>
+          </div>
+          <h3>HypX-AI</h3>
+          <p>An efficient AI runtime built to run demanding models locally, with a focus on speed and resource discipline.</p>
+          <div class="download-meta">
+            <span>⌁ AI Runtime</span>
+            <span>⌘ Infosoft/HypX-AI</span>
+          </div>
+          <div class="download-actions">
+            <a href="https://github.com/Infosoft/HypX-AI" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v10m0 0l-4-4m4 4l4-4M4 16h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="notice-panel reveal">
+        <div class="notice-icon">i</div>
+        <div>
+          <h4>Building from source</h4>
+          <p>Each repository includes its own README with setup and build instructions. Clone with <span class="mono">git clone</span> followed by the repository URL, then follow the steps listed for your platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Not sure where to start?</h2>
+        <p>Head to the GitHub organization to browse every repository, open issue and release in one place.</p>
+        <div class="hero-cta">
+          <a href="https://github.com/Infosoft" target="_blank" rel="noopener" class="btn btn-primary">Visit Infosoft on GitHub</a>
+          <a href="index.html" class="btn btn-ghost">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Infosoft
+        </a>
+        <p>Software for people who don't want to wait on their machine. Built in the open, shipped with care.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="https://github.com/Infosoft/EclipseOS" target="_blank" rel="noopener">EclipseOS</a></li>
+          <li><a href="https://github.com/Infosoft/Dpp" target="_blank" rel="noopener">Dpp</a></li>
+          <li><a href="https://github.com/Infosoft/CutPro" target="_blank" rel="noopener">CutPro</a></li>
+          <li><a href="https://github.com/Infosoft/HypX-AI" target="_blank" rel="noopener">HypX-AI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/Infosoft" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Infosoft. All rights reserved.</span>
+      <span class="mono">Built with care, shipped in the open.</span>
+    </div>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
